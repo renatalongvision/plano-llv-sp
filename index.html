@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLV São Paulo · Plano de Campanha LinkedIn</title>
+<style>
+  :root{
+    --verde:#007E7B; --verdeEsc:#005A58; --bege:#A69D79;
+    --cinza:#ECEDEF; --sep:#D9D9D9; --txt2:#888; --preto:#1a1a1a;
+    --vermelho:#C00000; --verdeSt:#548235; --laranja:#ED7D31; --amarelo:#FFF2CC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+       color:var(--preto);background:#fafafa;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;background:#fff;box-shadow:0 0 40px rgba(0,0,0,.06)}
+  header{background:var(--verde);color:#fff;padding:44px 56px 38px;position:relative}
+  header::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:6px;background:var(--bege)}
+  header .eyebrow{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;opacity:.82;font-weight:600}
+  header h1{font-size:34px;font-weight:700;margin:10px 0 6px;letter-spacing:-.4px}
+  header .sub{font-size:15px;opacity:.9}
+  .meta{display:flex;gap:36px;margin-top:26px;flex-wrap:wrap}
+  .meta div{border-left:2px solid rgba(255,255,255,.35);padding-left:14px}
+  .meta .k{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;opacity:.8}
+  .meta .v{font-size:19px;font-weight:700;margin-top:2px}
+  section{padding:38px 56px;border-bottom:1px solid var(--sep)}
+  h2{font-size:21px;color:var(--verde);font-weight:700;margin-bottom:6px;letter-spacing:-.2px}
+  h2 .num{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;
+          background:var(--verde);color:#fff;border-radius:4px;font-size:13px;margin-right:10px;vertical-align:2px}
+  .lead{color:var(--txt2);font-size:14px;font-style:italic;margin-bottom:22px}
+  h3{font-size:15px;font-weight:700;margin:24px 0 8px}
+  p{margin-bottom:12px;font-size:14.5px}
+  ul{margin:0 0 12px 20px;font-size:14.5px}
+  li{margin-bottom:6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0}
+  th{background:var(--cinza);text-align:left;padding:10px 12px;font-size:11.5px;
+     text-transform:uppercase;letter-spacing:.8px;color:#555;font-weight:700;border-bottom:2px solid var(--verde)}
+  td{padding:11px 12px;border-bottom:1px solid var(--sep);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 6px}
+  .stat{background:var(--cinza);border-left:4px solid var(--verde);padding:14px 16px;border-radius:0 4px 4px 0}
+  .stat .n{font-size:27px;font-weight:700;color:var(--verde);letter-spacing:-.6px;line-height:1.1}
+  .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.9px;color:#666;margin-top:5px;font-weight:600}
+  .callout{background:var(--amarelo);border-left:4px solid var(--laranja);padding:14px 18px;margin:16px 0;font-size:14px;border-radius:0 4px 4px 0}
+  .callout b{color:#8a4b0f}
+  .badge{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:11px;
+         text-transform:uppercase;letter-spacing:.8px;color:#fff;white-space:nowrap}
+  .b-topo{background:var(--bege)} .b-meio{background:var(--verde)} .b-fundo{background:var(--verdeEsc)}
+  .b-prep{background:var(--txt2)}
+  /* timeline */
+  .tl{margin:22px 0 6px;position:relative;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--sep)}
+  .ph{position:relative;margin-bottom:22px}
+  .ph::before{content:"";position:absolute;left:-24px;top:5px;width:12px;height:12px;border-radius:50%;
+              background:#fff;border:3px solid var(--verde)}
+  .ph .hd{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:5px}
+  .ph .dt{font-size:12.5px;font-weight:700;color:var(--verde);font-variant-numeric:tabular-nums}
+  .ph .ti{font-size:15px;font-weight:700}
+  .ph .bd{font-size:13.5px;color:#444}
+  /* calculadora */
+  .calc{background:var(--cinza);padding:22px 24px;border-radius:6px;margin-top:16px}
+  .calcgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 20px}
+  .fld label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.9px;
+             color:#555;font-weight:700;margin-bottom:5px}
+  .fld input{width:100%;padding:9px 11px;border:1px solid #c4c8cc;border-radius:4px;
+             font-size:15px;font-weight:600;font-family:inherit;background:#fff;color:var(--preto)}
+  .fld input:focus{outline:none;border-color:var(--verde);box-shadow:0 0 0 3px rgba(0,126,123,.14)}
+  .fld .hint{font-size:10.5px;color:var(--txt2);margin-top:3px}
+  .out{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px;padding-top:20px;border-top:2px solid #fff}
+  .ocard{background:#fff;padding:13px 15px;border-radius:4px;border-top:3px solid var(--verde)}
+  .ocard .n{font-size:23px;font-weight:700;color:var(--verde);letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+  .ocard .l{font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:#666;margin-top:4px;font-weight:600}
+  .chk li{list-style:none;margin-left:-20px;padding-left:26px;position:relative;margin-bottom:9px;font-size:14px}
+  .chk li::before{content:"☐";position:absolute;left:0;top:-1px;color:var(--verde);font-size:17px}
+  .risk{border-left:4px solid var(--vermelho);background:#fdf3f3;padding:13px 17px;margin:12px 0;font-size:14px;border-radius:0 4px 4px 0}
+  .risk b{color:var(--vermelho)}
+  footer{padding:26px 56px;font-size:12px;color:var(--txt2);background:var(--cinza)}
+  .src{font-size:12px;color:var(--txt2);margin-top:10px;font-style:italic}
+  @media(max-width:820px){
+    section,header,footer{padding-left:24px;padding-right:24px}
+    .stats,.calcgrid,.out{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">LongVision · Líder LongVision</div>
+  <h1>LLV São Paulo — Plano de Campanha LinkedIn</h1>
+  <div class="sub">Segmentação da lista Apollo e estrutura de topo, meio e fundo de funil</div>
+  <div class="meta">
+    <div><div class="k">Turma</div><div class="v">11 a 13/nov/2026</div></div>
+    <div><div class="k">Praça</div><div class="v">São Paulo</div></div>
+    <div><div class="k">Janela até a turma</div><div class="v">104 dias</div></div>
+    <div><div class="k">Contas na lista</div><div class="v">1.243</div></div>
+  </div>
+</header>
+
+<!-- 1. A LISTA -->
+<section>
+  <h2><span class="num">1</span>A lista extraída</h2>
+  <div class="lead">Apollo.io · empresas com sede na Grande SP e no cinturão industrial · 201+ funcionários</div>
+
+  <div class="stats">
+    <div class="stat"><div class="n">1.243</div><div class="l">Empresas únicas</div></div>
+    <div class="stat"><div class="n">872</div><div class="l">Indústria / manufatura</div></div>
+    <div class="stat"><div class="n">371</div><div class="l">Tecnologia</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">Com página LinkedIn</div></div>
+  </div>
+
+  <p><b>Filtros aplicados:</b> sede em São Paulo capital, ABC (Santo André, São Bernardo, São Caetano, Diadema), Guarulhos, Osasco, Barueri, Cotia, Embu, Campinas, Jundiaí, Indaiatuba, Sorocaba, Piracicaba, Americana, Limeira, São José dos Campos, Taubaté e Ribeirão Preto. Porte de 201 a 10.000+ funcionários. Setores por código NAICS: 31–33 (manufatura) e 5112 / 5415 / 5182 / 5179 (software, serviços de TI, dados e telecom).</p>
+
+  <p>1.115 das 1.243 contas têm domínio corporativo identificado e todas as 1.243 têm URL de página no LinkedIn — os dois campos que o LinkedIn usa para casar a lista. Isso deve entregar <b>taxa de match na faixa de 80–90%</b>, muito acima do que uma lista de e-mails entregaria.</p>
+
+  <div class="callout">
+    <b>Por que empresa e não contato.</b> Lista de contatos por e-mail casa mal no LinkedIn porque o Apollo entrega e-mail corporativo e o LinkedIn casa melhor com e-mail pessoal — na prática 20–30%. Subindo empresas e deixando o filtro de cargo e senioridade por conta do LinkedIn, você mantém precisão e ganha alcance. A lista de contatos continua útil, mas para o time comercial e para e-mail, não para mídia.
+  </div>
+</section>
+
+<!-- 2. SEGMENTACAO -->
+<section>
+  <h2><span class="num">2</span>Segmentação em três camadas</h2>
+  <div class="lead">A lista é uma só. O que muda entre topo, meio e fundo é a audiência derivada de comportamento — não o arquivo.</div>
+
+  <h3>Camada 1 · Empresa — vem do Apollo</h3>
+  <p>É o CSV que você sobe como <i>Matched Audience → Company List</i>. Suba os três arquivos: o consolidado e os dois recortes por setor. Rodar Indústria e Tecnologia como campanhas separadas custa o mesmo e gera o histórico comparativo que hoje falta ao time.</p>
+
+  <h3>Camada 2 · Pessoa — configurada no LinkedIn, não no Apollo</h3>
+  <p>Sobre cada lista de empresas, aplique dois recortes de pessoa. São <b>duas campanhas com criativos diferentes</b>, porque a dor de cada um é diferente:</p>
+
+  <table>
+    <thead><tr><th style="width:16%">Segmento</th><th style="width:30%">Filtro no LinkedIn</th><th style="width:14%">Universo</th><th>Dor a atacar no criativo</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>A · Comprador</b><br><span style="color:var(--txt2);font-size:12px">RH / T&amp;D</span></td>
+        <td>Job Function: <i>Human Resources</i><br>Seniority: <i>Manager, Director, VP, CXO</i></td>
+        <td><b>≈ 6.700</b><br><span style="color:var(--txt2);font-size:12px">pessoas na região</span></td>
+        <td>"Não tenho trilha estruturada de liderança para a primeira linha e preciso justificar o investimento."</td>
+      </tr>
+      <tr>
+        <td><b>B · Sponsor</b><br><span style="color:var(--txt2);font-size:12px">Dono da dor</span></td>
+        <td>Job Function: <i>Operations, Engineering, Program &amp; Project Mgmt, Support</i><br>Seniority: <i>Manager, Director, VP, CXO</i></td>
+        <td><b>≈ 40.000</b><br><span style="color:var(--txt2);font-size:12px">pessoas na região</span></td>
+        <td>"Meu supervisor é excelente tecnicamente e trava na hora de liderar gente. O time dele sofre e eu apago incêndio."</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <b>O achado que muda a estratégia.</b> O sponsor de área é <b>6 vezes maior</b> que o RH nessa mesma base de empresas. Em turma aberta, quem costuma puxar a inscrição de um supervisor é o gerente dele — o RH aprova o orçamento, mas raramente origina a demanda. Rodar só em cima de RH descarta a maior parte do mercado endereçável.
+  </div>
+
+  <h3>Camada 3 · Funil — construída por comportamento</h3>
+  <p>Cada etapa alimenta a seguinte. Nenhuma audiência de retargeting existe antes de a etapa anterior rodar — é por isso que o topo não pode começar em outubro.</p>
+  <table>
+    <thead><tr><th style="width:14%">Etapa</th><th style="width:38%">Audiência</th><th>Objetivo e formato</th></tr></thead>
+    <tbody>
+      <tr><td><span class="badge b-topo">Topo</span></td>
+          <td>Company List × Segmento A<br>Company List × Segmento B<br><span style="color:var(--txt2);font-size:12px">frio, sem exclusões</span></td>
+          <td><b>Brand Awareness / Video Views.</b> Vídeo de 30–60s e documento carrossel. Não pede inscrição, não pede e-mail. A função é criar o pool de retargeting.</td></tr>
+      <tr><td><span class="badge b-meio">Meio</span></td>
+          <td>Viu 25%+ do vídeo · engajou com a página da LV · visitou o site (Insight Tag)<br><span style="color:var(--txt2);font-size:12px">+ lista fria como reforço</span></td>
+          <td><b>Lead Generation.</b> Material rico — diagnóstico de maturidade de liderança, guia dos erros do supervisor promovido, case da LV. Lead Gen Form nativo, não landing page.</td></tr>
+      <tr><td><span class="badge b-fundo">Fundo</span></td>
+          <td>Abriu o Lead Gen Form e não enviou · visitou a página do LLV · baixou o material · lista de leads do CRM<br><span style="color:var(--txt2);font-size:12px">excluir quem já se inscreveu</span></td>
+          <td><b>Conversão.</b> Página, datas, investimento, lote, prova social. Single image + Message Ads para a lista quente. Escassez real de vagas.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="risk">
+    <b>Mínimo do LinkedIn: 300 membros por audiência.</b> Toda audiência de retargeting precisa acumular 300 pessoas antes de a campanha entregar. Com ~47 mil pessoas no topo isso leva de duas a três semanas de mídia. Se o topo só começar em outubro, o fundo não terá de onde puxar gente e a turma será vendida no telefone, não na mídia.
+  </div>
+</section>
+
+<!-- 3. CRONOGRAMA -->
+<section>
+  <h2><span class="num">3</span>Cronograma retroativo a 11/11</h2>
+  <div class="lead">Construído de trás para frente a partir da data da turma, com sobreposição entre as fases</div>
+
+  <div class="tl">
+    <div class="ph">
+      <div class="hd"><span class="badge b-prep">Preparação</span><span class="dt">31/jul → 14/ago</span><span class="ti">Fundação técnica</span></div>
+      <div class="bd">Subir as três listas de empresas · confirmar o Insight Tag no site · criar as conversões · publicar ou revisar a página do LLV SP · produzir os criativos das três fases de uma vez. Nada de mídia ainda.</div>
+    </div>
+    <div class="ph">
+      <div class="hd"><span class="badge b-topo">Topo</span><span class="dt">17/ago → 27/set</span><span class="ti">Construir o pool · ~40% do budget</span></div>
+      <div class="bd">Seis semanas. Quatro campanhas no ar: Indústria×RH, Indústria×Sponsor, Tech×RH, Tech×Sponsor. Métrica que importa é tamanho da audiência de retargeting acumulada, não CPL.</div>
+    </div>
+    <div class="ph">
+      <div class="hd"><span class="badge b-meio">Meio</span><span class="dt">14/set → 18/out</span><span class="ti">Capturar lead · ~35% do budget</span></div>
+      <div class="bd">Cinco semanas, sobrepondo duas com o topo. Lead Gen Form no material rico. A partir daqui o comercial precisa ter cadência de follow-up definida — lead de turma aberta esfria em 72h.</div>
+    </div>
+    <div class="ph">
+      <div class="hd"><span class="badge b-fundo">Fundo</span><span class="dt">13/out → 07/nov</span><span class="ti">Converter · ~25% do budget</span></div>
+      <div class="bd">Quatro semanas. Conversão direta com lote e vagas. Message Ads para a lista quente na semana de 26/10. Última chamada de 03 a 07/11.</div>
+    </div>
+    <div class="ph">
+      <div class="hd"><span class="badge b-fundo">Turma</span><span class="dt">11 a 13/nov</span><span class="ti">Execução</span></div>
+      <div class="bd">Conteúdo de bastidor durante os três dias alimenta o topo da próxima turma. Registre tudo — é o ativo de prova social que hoje falta.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>A data crítica é 17 de agosto.</b> Não é a data da turma. É a data em que o topo precisa estar no ar para que exista audiência de retargeting em outubro. Todo atraso aqui se paga em CPL mais alto no fundo.
+  </div>
+</section>
+
+<!-- 4. CALCULADORA -->
+<section>
+  <h2><span class="num">4</span>Funil reverso — quanto de mídia a turma exige</h2>
+  <div class="lead">Ajuste as premissas e o modelo recalcula. Os valores iniciais são referências de mercado B2B no LinkedIn Brasil, não histórico da LongVision.</div>
+
+  <div class="calc">
+    <div class="calcgrid">
+      <div class="fld"><label>Vagas na turma</label><input type="number" id="vagas" value="25" min="1">
+        <div class="hint">meta de matrículas</div></div>
+      <div class="fld"><label>% de vagas via mídia</label><input type="number" id="pctmidia" value="60" min="1" max="100">
+        <div class="hint">o resto vem de base e indicação</div></div>
+      <div class="fld"><label>Lead → matrícula (%)</label><input type="number" id="convlead" value="8" step="0.5" min="0.1">
+        <div class="hint">premissa a validar com o comercial</div></div>
+      <div class="fld"><label>Clique → lead (%)</label><input type="number" id="convclick" value="12" step="0.5" min="0.1">
+        <div class="hint">Lead Gen Form nativo converte mais que LP</div></div>
+      <div class="fld"><label>CTR médio (%)</label><input type="number" id="ctr" value="0.45" step="0.05" min="0.05">
+        <div class="hint">faixa B2B LinkedIn: 0,35% a 0,60%</div></div>
+      <div class="fld"><label>CPM (R$)</label><input type="number" id="cpm" value="65" step="5" min="1">
+        <div class="hint">faixa Brasil B2B: R$ 45 a R$ 90</div></div>
+    </div>
+    <div class="out">
+      <div class="ocard"><div class="n" id="o_matr">—</div><div class="l">Matrículas via mídia</div></div>
+      <div class="ocard"><div class="n" id="o_leads">—</div><div class="l">Leads necessários</div></div>
+      <div class="ocard"><div class="n" id="o_cliques">—</div><div class="l">Cliques necessários</div></div>
+      <div class="ocard"><div class="n" id="o_imp">—</div><div class="l">Impressões necessárias</div></div>
+      <div class="ocard"><div class="n" id="o_budget">—</div><div class="l">Budget total de mídia</div></div>
+      <div class="ocard"><div class="n" id="o_cpl">—</div><div class="l">CPL implícito</div></div>
+      <div class="ocard"><div class="n" id="o_cac">—</div><div class="l">CAC de mídia por aluno</div></div>
+      <div class="ocard"><div class="n" id="o_freq">—</div><div class="l">Frequência sobre 47k pessoas</div></div>
+    </div>
+    <p style="font-size:12.5px;color:#666;margin:16px 0 0">
+      Divisão sugerida do budget: <b>40% topo</b> (<span id="s_topo">—</span>) · <b>35% meio</b> (<span id="s_meio">—</span>) · <b>25% fundo</b> (<span id="s_fundo">—</span>).
+    </p>
+  </div>
+
+  <div class="risk">
+    <b>Substitua as premissas pelo histórico real.</b> Cada número acima é uma referência de mercado. Peça à analista de tráfego o CTR, o CPM e a conversão de LP das campanhas B2B da LV nos últimos 12 meses e refaça a conta — a diferença entre um CPM de R$ 45 e R$ 90 dobra o budget necessário para a mesma turma.
+  </div>
+</section>
+
+<!-- 5. CHECKLIST -->
+<section>
+  <h2><span class="num">5</span>Checklist de implementação</h2>
+  <div class="lead">Sequência técnica no LinkedIn Campaign Manager</div>
+
+  <h3>Até 14 de agosto</h3>
+  <ul class="chk">
+    <li>Subir <b>LinkedIn_Company_List_LLV_SP.csv</b> em Plan → Audiences → Create → Company list. Aguardar 24–48h de processamento.</li>
+    <li>Subir também os recortes <b>_INDUSTRIA</b> e <b>_TECNOLOGIA</b> como audiências separadas.</li>
+    <li>Conferir a taxa de match reportada. Abaixo de 60% vale revisar o arquivo antes de investir.</li>
+    <li>Validar o Insight Tag no site da LV e na página do LLV — sem ele, não existe retargeting de site.</li>
+    <li>Criar as conversões: visualização da página do LLV, envio de Lead Gen Form, clique em "quero me inscrever".</li>
+    <li>Criar a audiência de exclusão de inscritos e alimentá-la semanalmente a partir do CRM.</li>
+    <li>Produzir os criativos das três fases de uma vez — vídeo de topo, documento de meio, estáticos de fundo.</li>
+  </ul>
+
+  <h3>Ao subir cada campanha</h3>
+  <ul class="chk">
+    <li>Desligar <b>Audience Expansion</b> e a <b>LinkedIn Audience Network</b> em todas as campanhas de meio e fundo.</li>
+    <li>Aplicar sempre dois filtros de pessoa: Job Function <b>e</b> Seniority. Nunca cargo por texto livre — em português a cobertura fica furada.</li>
+    <li>Separar Indústria e Tecnologia em campanhas distintas, mesmo com criativo igual, para gerar o comparativo.</li>
+    <li>Frequência-alvo de 4 a 6 impressões por pessoa no topo. Acima de 8 o criativo satura.</li>
+    <li>Nomear tudo no padrão <code>LLV-SP_[FASE]_[SETOR]_[PERSONA]_[FORMATO]</code> — sem isso o relatório de fechamento não fecha.</li>
+  </ul>
+
+  <h3>Ritual de acompanhamento</h3>
+  <ul class="chk">
+    <li>Semanal com tráfego: tamanho das audiências de retargeting, frequência, CPL por segmento.</li>
+    <li>Semanal na reunião de marketing + comercial: leads gerados vs. leads trabalhados vs. inscrições.</li>
+    <li>Corte de decisão em <b>05/out</b>: se o pool de retargeting estiver abaixo de 3.000 pessoas, remanejar budget do fundo para o topo.</li>
+  </ul>
+</section>
+
+<!-- 6. DECISOES -->
+<section style="border-bottom:none">
+  <h2><span class="num">6</span>Decisões em aberto</h2>
+  <div class="lead">Pontos que travam a execução e dependem de definição sua</div>
+
+  <table>
+    <thead><tr><th style="width:26%">Decisão</th><th>Por que importa</th><th style="width:16%">Prazo</th></tr></thead>
+    <tbody>
+      <tr><td><b>Número de vagas e ticket</b></td><td>Sem isso o funil reverso não fecha e não há como definir o teto de budget nem o CAC aceitável.</td><td>até 06/ago</td></tr>
+      <tr><td><b>Budget de mídia da turma</b></td><td>O LLV não estava no orçamento original. Se a verba for menor que o modelo exige, o corte certo é reduzir a região — não reduzir o topo.</td><td>até 06/ago</td></tr>
+      <tr><td><b>Oferta de meio de funil</b></td><td>Precisa existir um material rico real. Sem ele, o meio vira fundo e o CPL explode.</td><td>até 14/ago</td></tr>
+      <tr><td><b>Cadência do comercial</b></td><td>Lead de turma aberta esfria em 72h. Quem liga, em quanto tempo, com qual script.</td><td>até 07/set</td></tr>
+      <tr><td><b>Teste do próprio coordenador</b></td><td>O ICP definido é gerência para cima, mas o aluno é o supervisor/coordenador. Vale testar 10% do budget falando direto com ele em "leve para seu gestor".</td><td>opcional, fase de meio</td></tr>
+    </tbody>
+  </table>
+
+  <p class="src">Volumes de pessoas e empresas extraídos do Apollo.io em 30/07/2026. Referências de CTR, CPM e taxas de conversão são faixas de mercado B2B para LinkedIn no Brasil e devem ser substituídas pelo histórico da LongVision antes da aprovação do budget.</p>
+</section>
+
+<footer>
+  LongVision · Marketing · Plano LLV São Paulo — turma de 11 a 13 de novembro de 2026
+</footer>
+</div>
+
+<script>
+(function(){
+  var ids=['vagas','pctmidia','convlead','convclick','ctr','cpm'];
+  function n(id){ var v=parseFloat(document.getElementById(id).value); return isNaN(v)?0:v; }
+  var brl=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+  var num=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0});
+  var UNIVERSO=46791; // 6.758 RH + 40.033 sponsors
+
+  function calc(){
+    var matr = n('vagas') * n('pctmidia')/100;
+    var leads = n('convlead')>0 ? matr / (n('convlead')/100) : 0;
+    var cliques = n('convclick')>0 ? leads / (n('convclick')/100) : 0;
+    var imp = n('ctr')>0 ? cliques / (n('ctr')/100) : 0;
+    var budget = imp/1000 * n('cpm');
+    var cpl = leads>0 ? budget/leads : 0;
+    var cac = matr>0 ? budget/matr : 0;
+    var freq = imp/UNIVERSO;
+
+    document.getElementById('o_matr').textContent   = num.format(Math.ceil(matr));
+    document.getElementById('o_leads').textContent  = num.format(Math.ceil(leads));
+    document.getElementById('o_cliques').textContent= num.format(Math.ceil(cliques));
+    document.getElementById('o_imp').textContent    = num.format(Math.ceil(imp));
+    document.getElementById('o_budget').textContent = brl.format(budget);
+    document.getElementById('o_cpl').textContent    = brl.format(cpl);
+    document.getElementById('o_cac').textContent    = brl.format(cac);
+    document.getElementById('o_freq').textContent   = freq.toLocaleString('pt-BR',{maximumFractionDigits:1})+'x';
+
+    document.getElementById('s_topo').textContent  = brl.format(budget*0.40);
+    document.getElementById('s_meio').textContent  = brl.format(budget*0.35);
+    document.getElementById('s_fundo').textContent = brl.format(budget*0.25);
+  }
+  ids.forEach(function(id){
+    var el=document.getElementById(id);
+    el.addEventListener('input',calc);
+    el.addEventListener('change',calc);
+  });
+  calc();
+})();
+</script>
+</body>
+</html>
